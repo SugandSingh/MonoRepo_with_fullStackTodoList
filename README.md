@@ -31,7 +31,7 @@ Building a monorepo with React Native, React, and Node.js offers a powerful appr
 
 ## Screenshots
 
-![App Screenshot](https://github.com/SugandSingh/MonoRepo_with_fullStackTodoList/blob/main/AppScreenShot/Screenshot%202023-07-26%20at%205.47.29%20PM.png)
+![App Screenshot](https://raw.githubusercontent.com/SugandSingh/MonoRepo_with_fullStackTodoList/main/AppScreenShot/Screenshot%202023-07-26%20at%205.47.29%20PM.png)
 
 
 ## Authors
