@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "mono-repo",
+  "name": "monoRepo-with-fullStackTodoList",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
