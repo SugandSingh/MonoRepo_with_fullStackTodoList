@@ -1,7 +1,7 @@
 
 # Building a Monorepo with React Native, React, and Node.js: A Small Project Todo List
 
-ntroduction:
+Introduction:
 In modern software development, monorepos have gained popularity due to their ability to manage multiple projects within a single code repository. In this post, we will explore the process of building a monorepo using React Native, React, and Node.js. Our focus will be on creating a small project todo list, allowing us to better understand how these technologies can work together seamlessly.
 
 What is a Monorepo?
