@@ -42,7 +42,7 @@ function App() {
             onClick={
               isUpdating
                 ? () => updateToDo(toDoId, text, setToDo, setText, setIsUpdating,'ios')
-                : () => addToDo(text, setText, setToDo)
+                : () => addToDo(text, setText, setToDo,'ios')
             }
           >
             {isUpdating ? "Update" : "Add"}
