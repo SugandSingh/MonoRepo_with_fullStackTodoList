@@ -4,9 +4,6 @@ const baseUrl: Record<string, string> = {
 };
 
 interface ToDo {
-  // Define the structure of your ToDo object here
-  // For example: _id: string; text: string; createdAt: Date;
-  // Modify this interface to match the actual ToDo structure from the server response.
 }
 
 const handleResponse = async (response: Response): Promise<any> => {
@@ -27,7 +24,7 @@ const getAllToDo = async (
     setToDo(data);
   } catch (err) {
     console.error("Error fetching Todo items:", err);
-    setToDo([]); // If an error occurs, set an empty array for Todo items
+    setToDo([]); 
   }
 };
 
