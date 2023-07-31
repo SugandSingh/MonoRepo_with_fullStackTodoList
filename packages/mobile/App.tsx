@@ -9,7 +9,7 @@ import {
   Platform,
   SafeAreaView,
 } from 'react-native';
-import {addToDo, getAllToDo, updateToDo, deleteToDo} from './api';
+import {addToDo, getAllToDo, updateToDo, deleteToDo} from 'shared';
 import ToDo from './components/Todo';
 
 const App: React.FC = () => {

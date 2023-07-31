@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ToDo from "./components/Todo";
-import { addToDo, getAllToDo, updateToDo, deleteToDo } from "./api";
+import { addToDo, getAllToDo, updateToDo, deleteToDo ,log} from "shared";
 
 function App() {
   // State variables to manage Todo items and their properties
@@ -11,7 +11,8 @@ function App() {
 
   // Fetch all Todo items from the server on component mount
   useEffect(() => {
-    getAllToDo(setToDo);
+    getAllToDo(setToDo,'ios');
+    log()
   }, []);
 
   // Function to enter update mode for a specific Todo item
@@ -40,7 +41,7 @@ function App() {
             className="add"
             onClick={
               isUpdating
-                ? () => updateToDo(toDoId, text, setToDo, setText, setIsUpdating)
+                ? () => updateToDo(toDoId, text, setToDo, setText, setIsUpdating,'ios')
                 : () => addToDo(text, setText, setToDo)
             }
           >
@@ -55,7 +56,7 @@ function App() {
               key={item._id}
               text={item.text}
               updateMode={() => updateMode(item._id, item.text)}
-              deleteToDo={() => deleteToDo(item._id, setToDo)}
+              deleteToDo={() => deleteToDo(item._id, setToDo,'ios')}
             />
           ))}
         </div>
